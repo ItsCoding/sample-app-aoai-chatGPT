@@ -89,6 +89,7 @@ const Chat = () => {
         const userInfoList = await getUserInfo();
         if (userInfoList.length === 0 && window.location.hostname !== "127.0.0.1") {
             setShowAuthMessage(false);
+            console.log("Auth disabled");
         }
         else {
             setShowAuthMessage(false);
